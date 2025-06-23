@@ -29,9 +29,12 @@ const Footer = () => {
           <div className="md:col-span-2 flex flex-col justify-between">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <Button size="sm" className="w-fit text-lg font-bold shadow-lg">
+                <span
+                  size="sm"
+                  className="w-fit bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:from-purple-600 hover:to-blue-600 focus-visible:ring-purple-500 px-3 rounded-md py-1"
+                >
                   NB
-                </Button>
+                </span>
               </div>
               <p className="text-gray-400 mb-6 max-w-xs leading-relaxed">
                 Experience seamless digital finance with intelligent budgeting,
