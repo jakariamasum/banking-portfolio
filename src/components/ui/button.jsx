@@ -19,15 +19,19 @@ const Button = forwardRef(
 
     const variants = {
       primary:
-        "bg-[#7331FD] text-white hover:bg-[#7331FD] active:bg-[#7331FD] focus-visible:ring-[#7331FD]",
+        "bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:from-purple-600 hover:to-blue-600 focus-visible:ring-purple-500 w-full",
+
       secondary:
-        "bg-gray-700 text-white hover:bg-gray-800 active:bg-gray-900 focus-visible:ring-gray-500",
+        "bg-gray-100 text-gray-900 hover:bg-gray-200 active:bg-gray-300 focus-visible:ring-gray-400 w-full",
+
       outline:
-        "border border-[#7331FD] text-[#7331FD] bg-white hover:bg-[#7331FD] hover:text-white active:bg-[#7331FD] focus-visible:ring-[#7331FD]",
+        "border border-[#7331FD] text-[#7331FD] bg-white hover:bg-[#7331FD] hover:text-white focus-visible:ring-[#7331FD] w-full",
+
       ghost:
-        "text-gray-700 bg-transparent hover:bg-gray-100 active:bg-gray-200 focus-visible:ring-gray-400",
+        "bg-transparent text-gray-700 hover:bg-gray-100 active:bg-gray-200 focus-visible:ring-gray-300 w-full",
+
       danger:
-        "bg-red-600 text-white hover:bg-red-700 active:bg-red-800 focus-visible:ring-red-500",
+        "bg-red-500 text-white hover:bg-red-600 active:bg-red-700 focus-visible:ring-red-500 w-full",
     };
 
     const sizes = {
@@ -51,4 +55,4 @@ const Button = forwardRef(
 
 Button.displayName = "Button";
 
-export { Button };
+export default Button;
